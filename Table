@@ -1,0 +1,121 @@
+getgenv().Alpraz = {
+    ["Options"] = {
+        NoError = true,
+        LowGfx = false,
+        DestroySits = true
+    },
+    ["Silent"] = {
+        Enabled = true,
+        UseKeybind = false,
+        Keybind = "V",
+
+        UsePrediction = true,
+        Prediction = 0.119,
+        HitPart = "UpperTorso",
+        ClosestPointMode = true,
+        ClosestPartMode = false,
+        HitChance = 100,
+        AntiAimViewer = true,
+        Randomize = false,
+        RandomizeValue = 15,
+
+        ["Fov"] = {
+            Visible = false,
+            Filled = false,
+            Transparency = 0.7,
+            Color = Color3.fromRGB(200, 200, 200),
+            Radius = 10,
+        }
+    },
+    ["Aimbot"] = {
+        Enabled = true,
+        HoldMode = false,
+        Keybind = "E",
+        Mode = "Mouse" --Mouse/Camera
+
+        UsePrediction = true,
+        Prediction_Y = 0.119,
+        Prediction_X = 0.14, 
+        HitPart = "UpperTorso",
+        ClosestPartMode = false,
+        OnlyInFov = false,
+        
+        UseSmoothness = true,
+        Smoothing_X = 0.03,
+        Smoothing_Y = 0.001,
+        AirSmoothness = false,
+        AirSmoothing_X = 0.1,
+        AirSmoothing_Y = 0.1,
+        Shakes = false
+        Shake_X = 10,
+        Shake_Y = 10,
+        Shake_Z = 10,
+        
+        ["Fov"] = {
+            Visible = false,
+            Filled = false,
+            Transparency = 0.7,
+            Color = Color3.fromRGB(200, 200, 200),
+            Radius = 10,
+        }
+    },
+    ["WeaponTweaks"] = {
+        Enabled = false,
+        ["Configuration"] = {
+            Fov = true,
+            Range = true,
+            Prediction = false,
+            HitChance = false,
+            AirHitChance = false,
+            Smoothness = false,
+            AirSmoothness = false
+            Far_Activation = math.huge,
+            Medium_Activation = 64,
+            Close_Activation = 24,
+        },
+        ["Weapons"] = {
+            ["Revolver"] = {
+                Fov = 4,
+                Prediction = 0.135, HitChance = 100, AirHitChance = 100, Smoothness = 0.043, AirSmoothness = 0.055,
+                CloseFov = 9, ClosePrediction = 0.121, CloseHitChance = 100, CloseAirHitChance = 100, CloseSmoothness = 0.06, CloseAirSmoothness = 0.075,
+                MedFov = 4.8, MedPrediction = 0.124, MedHitChance = 100, MedAirHitChance = 100, MedSmoothness = 0.04, MedAirSmoothness = 0.065,
+                FarFov = 3.3, FarPrediction = 0.127, FarHitChance = 100, FarAirHitChance = 100, FarSmoothness = 0.03, FarAirSmoothness = 0.045
+            }
+        }
+    }
+    ["AutoPrediction"] = {
+        Enabled = true,
+        SilentPredictionEnabled = true,
+        AimbotPredictionEnabled = false,
+        ["200"] = 0.1848,
+        ["190"] = -- your value here,
+        ["180"] = -- your value here,
+        ["170"] = -- your value here,
+        ["160"] = -- your value here,
+        ["150"] = -- your value here,
+        ["140"] = -- your value here,
+        ["130"] = -- your value here,
+        ["120"] = -- your value here,
+        ["110"] = -- your value here,
+        ["100"] = -- your value here,
+        ["90"] = -- your value here,
+        ["80"] = -- your value here,
+        ["70"] = -- your value here,
+        ["60"] = -- your value here,
+        ["50"] = -- your value here,
+        ["40"] = -- your value here,
+        ["30"] = -- your value here,
+        ["20"] = -- your value here,
+        ["10"] = 0.9,
+    },
+    ["Checks"] = (
+        Wallchecks = true,
+        FriendCheck = false,
+        CrewCheck = false,
+        TeamCheck = false,
+        KoCheck = true,
+        ToolsOut = false,
+        TargetDeathCheck true,
+        LocalDeathCheck = true,
+    )
+}
